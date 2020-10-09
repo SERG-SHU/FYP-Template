@@ -1,4 +1,5 @@
 \documentclass[11pt, a4paper]{report}
+
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 
@@ -9,9 +10,11 @@
 \usepackage[top=2cm, bottom=2cm, left=4cm, right=2cm]{geometry}
 
 %10pt line spacing (equivalent to 11⁄2 spacing in Word) should be used. The typeface should be 11 point in an appropriate font (Arial, Verdana or Times New roman);
-
 \usepackage{setspace}
 \onehalfspacing
+
+\usepackage{natbib}
+\usepackage{hyperref}
 
 \begin{document}
 	
@@ -87,7 +90,9 @@ test test blablablab~\cite{Costa-Abreu:2019}.
 
 \chapter{Methodology}
 
-gajhfgsjdhgf
+A good book on using latex for writing your dissertation~\cite{talbot2013}.
+
+\blindtext[2]
 
 \section{Dataset}
 
@@ -116,7 +121,7 @@ hsgdjshagfjhasd~\cite{Costa-Abreu:2019}.
 
 
 \chapter{Final Remarks}
-jhjgjqgjkwgef
+jhjgjqgjkwgef~\cite{Lenth2011}.
 
 \section{Contributions}
 
@@ -124,9 +129,14 @@ jhjgjqgjkwgef
 
 \section{Future Work}
 
-
-
-\bibliographystyle{plain}
+\bibliographystyle{apa}
 \bibliography{refs}
+
+%Appendices 
+% Generate pdfs of those documents and import into the report using 
+%Appendix A - Project Specification document 
+%Appendix B - The Ethics form 
+%Appendix n - Listing, screen dumps, graphs, tables, interview data, observation records, organisational documentation, etc. 
+
 
 \end{document}
